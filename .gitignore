@@ -235,3 +235,8 @@ frontend/*.before-*
 
 .vs/
 .env
+project-backup-*/
+frontend-backup-*/
+*.before-popup
+*.before-calendar-complete
+*.calendar-backup
