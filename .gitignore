@@ -218,3 +218,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+.vs/
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.pyc
+.vscode/
+*.vsidx
+frontend-backup-*/
+frontend/*.before-*
+*.bak
+
+.vs/
+.env

@@ -1,0 +1,57 @@
+@'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Smart Task Management System</h1>
+        <p class="subtitle">Organize your tasks and track your progress.</p>
+
+        <section class="card">
+            <h2 id="form-heading">Add New Task</h2>
+
+            <form id="task-form">
+                <input type="text" id="title"
+                       placeholder="Task title" required>
+
+                <textarea id="description"
+                          placeholder="Task description"></textarea>
+
+                <label for="priority">Priority</label>
+                <select id="priority">
+                    <option value="low">Low</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="high">High</option>
+                </select>
+
+                <label for="status">Status</label>
+                <select id="status">
+                    <option value="pending">Pending</option>
+                    <option value="completed">Completed</option>
+                </select>
+
+                <label for="due-date">Due Date</label>
+                <input type="date" id="due-date">
+
+                <button type="submit" id="save-button">Add Task</button>
+                <button type="button" id="cancel-button"
+                        class="secondary" hidden>Cancel Edit</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>My Tasks</h2>
+            <p id="message"></p>
+            <div id="task-list"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+'@ | Set-Content -Path "frontend\index.html" -Encoding UTF8
